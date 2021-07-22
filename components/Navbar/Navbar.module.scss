@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--blue);
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  height: 15vh;
+
+  .logoWrapper {
+    margin-left: 9.93em;
+    display: flex;
+    align-items: center;
+  }
+
+  .list {
+    display: flex;
+    margin-right: 9.43em;
+
+    .item {
+      cursor: pointer;
+      margin-left: 2.06em;
+
+      &:hover {
+        color: var(--violet);
+      }
+    }
+  }
+}

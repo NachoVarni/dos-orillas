@@ -1,0 +1,21 @@
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .titleWrapper {
+    max-width: 58.12em;
+    position: relative;
+    text-align: center;
+
+    .title {
+      line-height: 1.21em;
+      font-size: 6rem;
+      font-weight: 900;
+      color: white;
+    }
+  }
+}

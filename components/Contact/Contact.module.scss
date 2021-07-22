@@ -1,0 +1,18 @@
+.wrapper {
+  min-height: 18.75em;
+  margin-left: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--grey);
+
+  .title {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .text {
+    font-size: 0.87rem;
+    line-height: 1.31em;
+  }
+}

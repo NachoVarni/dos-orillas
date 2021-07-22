@@ -1,0 +1,91 @@
+.scroll {
+  padding-top: 5vh;
+  background-color: var(--light-blue);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  background-color: var(--light-grey);
+}
+
+.title {
+  color: var(--violet);
+  font-size: 3rem;
+  margin-bottom: 2.31em;
+}
+
+.carousel {
+  text-align: center;
+  width: 80%;
+
+  .card {
+    position: relative;
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.slickArrow {
+  background-color: transparent;
+  position: absolute;
+  bottom: 50%;
+  width: 12px;
+  height: 21px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+}
+
+.slickPrev {
+  left: -10px;
+
+  &:after {
+    transform: translateX(-50%) translateX(-2px) translateY(-50%);
+    border-width: 9px 12px 9px 0;
+    border-color: transparent black transparent transparent;
+  }
+}
+
+.slickNext {
+  right: -10px;
+
+  &:after {
+    transform: translateX(-50%) translateX(2px) translateY(-50%);
+    border-width: 9px 0 9px 12px;
+    border-color: transparent transparent transparent black;
+  }
+}
+
+.slickNew {
+  width: 12px;
+  height: 21px;
+  position: relative;
+}
+
+.slickNewArrow {
+  position: relative;
+}
+
+.contactButton {
+  margin-right: 10%;
+  float: right;
+  cursor: pointer;
+  font-size: 1.1rem;
+  background-color: white;
+  color: var(--blue);
+  padding: 1em 6.27em;
+  border-radius: 15px;
+}

@@ -1,0 +1,58 @@
+.scroll {
+  padding-top: 15vh;
+}
+
+.wrapper {
+  height: 85vh;
+  overflow: hidden;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: var(--violet);
+
+  .textWrapper {
+    max-width: 58.12em;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+    .title {
+      line-height: 1.21em;
+      font-size: 3rem;
+      font-weight: 900;
+    }
+
+    .text {
+      font-size: 2.25rem;
+      line-height: 1.5em;
+    }
+
+    .contactButton {
+      cursor: pointer;
+      font-size: 1.1rem;
+      background-color: white;
+      color: var(--blue);
+      padding: 1em 6.27em;
+    }
+  }
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    252.33deg,
+    rgba(44, 89, 158, 0.7) -3.88%,
+    rgba(42, 29, 107, 0.7) 104.13%
+  );
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+}
