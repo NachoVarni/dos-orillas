@@ -8,7 +8,9 @@ function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.logoWrapper}>
-        <Image src={Logo} alt="logo" />
+        <Link to="home" spy={true} smooth={true}>
+          <Image src={Logo} alt="logo" />
+        </Link>
       </div>
 
       <ul className={styles.list}>
@@ -27,6 +29,7 @@ function Navbar() {
           </li>
         </Link>
       </ul>
+      <div className={styles.hamburguerMenu}>hamburguer</div>
     </div>
   );
 }

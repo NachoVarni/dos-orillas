@@ -1,6 +1,6 @@
 .wrapper {
-  min-height: 18.75em;
-  margin-left: 10em;
+  min-height: 30vh;
+  margin-left: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -9,10 +9,18 @@
   .title {
     font-size: 1.125rem;
     font-weight: 700;
+
+    @media (max-width: 375px) {
+      font-size: 1rem;
+    }
   }
 
   .text {
     font-size: 0.87rem;
     line-height: 1.31em;
+
+    @media (max-width: 375px) {
+      font-size: 0.7rem;
+    }
   }
 }

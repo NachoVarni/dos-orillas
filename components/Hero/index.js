@@ -5,7 +5,7 @@ import styles from "./Hero.module.scss";
 
 function Hero() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="home">
       <Image
         src={HeroImg}
         layout="fill"

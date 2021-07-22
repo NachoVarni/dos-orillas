@@ -6,6 +6,7 @@ import Explain from "../Explain";
 import Work from "../Work";
 import Budget from "../Budget";
 import Contact from "../Contact";
+import ContactButton from "../ContactButton";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
       <Work />
       <Budget />
       <Contact />
+      <ContactButton />
     </>
   );
 }

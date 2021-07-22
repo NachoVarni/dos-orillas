@@ -91,11 +91,6 @@ function Work() {
           </Carousel>
         </div>
       </div>
-      <span className={styles.contactButton}>
-        <Link to="contactMenu" spy={true} smooth={true}>
-          CONTACTANOS!
-        </Link>
-      </span>
     </>
   );
 }

@@ -16,6 +16,10 @@
   color: var(--violet);
   font-size: 3rem;
   margin-bottom: 2.31em;
+
+  @media (max-width: 375px) {
+    font-size: 2rem;
+  }
 }
 
 .carousel {
@@ -88,4 +92,5 @@
   color: var(--blue);
   padding: 1em 6.27em;
   border-radius: 15px;
+  border: 1px solid var(--violet);
 }

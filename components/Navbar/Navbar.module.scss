@@ -13,14 +13,16 @@
   height: 15vh;
 
   .logoWrapper {
-    margin-left: 9.93em;
+    margin-left: 10%;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .list {
     display: flex;
-    margin-right: 9.43em;
+    justify-content: space-between;
+    margin-right: 10%;
 
     .item {
       cursor: pointer;
@@ -30,5 +32,13 @@
         color: var(--violet);
       }
     }
+
+    @media (max-width: 812px) {
+      display: none;
+    }
+  }
+
+  .hamburguerMenu {
+    display: none;
   }
 }

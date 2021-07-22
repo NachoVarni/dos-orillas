@@ -1,5 +1,5 @@
 .wrapper {
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   z-index: -1;
   display: flex;
@@ -7,13 +7,24 @@
   align-items: center;
 
   .titleWrapper {
-    max-width: 58.12em;
+    max-width: 50%;
     position: relative;
     text-align: center;
+    font-size: 6rem;
+
+    @media (max-width: 812px) {
+      font-size: 2.5rem;
+      max-width: 70%;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 1.4rem;
+      max-width: 80%;
+    }
 
     .title {
       line-height: 1.21em;
-      font-size: 6rem;
+
       font-weight: 900;
       color: white;
     }

@@ -1,0 +1,21 @@
+.contactButton {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  float: right;
+  cursor: pointer;
+  font-size: 1.1rem;
+  background-color: white;
+  color: var(--blue);
+  padding: 1em 5.27em;
+  border-radius: 15px;
+  border: 1px solid var(--violet);
+
+  @media (max-width: 812px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 0.6rem;
+  }
+}
