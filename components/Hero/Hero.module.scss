@@ -7,19 +7,49 @@
   align-items: center;
 
   .titleWrapper {
-    max-width: 50%;
+    max-width: 60%;
     position: relative;
     text-align: center;
-    font-size: 6rem;
+    font-size: 5rem;
 
-    @media (max-width: 812px) {
+    @media (max-width: 1536px) {
+      font-size: 4rem;
+      max-width: 70%;
+    }
+
+    @media (max-width: 1280px) {
+      font-size: 3.5rem;
+      max-width: 70%;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 3rem;
+      max-width: 70%;
+    }
+
+    @media (max-width: 940px) {
       font-size: 2.5rem;
       max-width: 70%;
     }
 
-    @media (max-width: 375px) {
-      font-size: 1.4rem;
+    @media (max-width: 768px) {
+      font-size: 2rem;
       max-width: 80%;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1.7rem;
+      max-width: 80%;
+    }
+
+    @media (max-width: 412px) {
+      font-size: 1.5rem;
+      max-width: 80%;
+    }
+
+    @media (max-width: 376px) {
+      font-size: 1.3rem;
+      max-width: 90%;
     }
 
     .title {

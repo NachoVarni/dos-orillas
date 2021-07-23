@@ -1,5 +1,5 @@
 .scroll {
-  padding-top: 5vh;
+  padding-top: 15vh;
   background-color: var(--light-blue);
 }
 
@@ -15,10 +15,22 @@
 .title {
   color: var(--violet);
   font-size: 3rem;
-  margin-bottom: 2.31em;
+  margin: 1em 0em 2.31em;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 600px) {
     font-size: 2rem;
+  }
+
+  @media (max-width: 412px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 376px) {
+    font-size: 1.7rem;
   }
 }
 
@@ -28,8 +40,8 @@
 
   .card {
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
   }
 }
 

@@ -22,8 +22,43 @@
       font-size: 1.5rem;
       max-width: 70%;
 
-      @media (max-width: 375px) {
+      @media (max-width: 1536px) {
+        font-size: 1.4rem;
+        max-width: 70%;
+      }
+
+      @media (max-width: 1280px) {
+        font-size: 1.4rem;
+        max-width: 70%;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 1.4rem;
+        max-width: 70%;
+      }
+
+      @media (max-width: 940px) {
+        font-size: 1.3rem;
+        max-width: 70%;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+        max-width: 80%;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 1.1rem;
+        max-width: 80%;
+      }
+
+      @media (max-width: 412px) {
         font-size: 1rem;
+        max-width: 80%;
+      }
+
+      @media (max-width: 376px) {
+        font-size: 0.9rem;
         max-width: 80%;
       }
 
@@ -33,11 +68,42 @@
         font-style: normal;
         font-weight: bold;
 
-        @media (max-width: 812px) {
-          font-size: 2rem;
+        @media (max-width: 1536px) {
+          font-size: 3rem;
+          max-width: 70%;
         }
 
-        @media (max-width: 375px) {
+        @media (max-width: 1280px) {
+          font-size: 2.5rem;
+          max-width: 70%;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 2rem;
+          max-width: 70%;
+        }
+
+        @media (max-width: 940px) {
+          font-size: 1.7rem;
+          max-width: 70%;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.7rem;
+          max-width: 80%;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 1.6rem;
+          max-width: 80%;
+        }
+
+        @media (max-width: 412px) {
+          font-size: 1.6rem;
+          max-width: 80%;
+        }
+
+        @media (max-width: 376px) {
           font-size: 1.1rem;
           max-width: 80%;
         }

@@ -28,6 +28,10 @@
       cursor: pointer;
       margin-left: 2.06em;
 
+      &:focus {
+        color: var(--violet);
+      }
+
       &:hover {
         color: var(--violet);
       }
@@ -40,5 +44,33 @@
 
   .hamburguerMenu {
     display: none;
+    margin-right: 10%;
+
+    @media (max-width: 812px) {
+      display: block;
+
+      .hamburguer {
+        font-size: 2rem;
+      }
+    }
   }
+
+  .hamList {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    background-color: white;
+
+    .hamItem {
+      padding: 1em;
+    }
+  }
+}
+
+.active {
+  color: var(--violet);
+}
+
+.nav-item > .active {
+  border-bottom: 1px solid #333;
 }
