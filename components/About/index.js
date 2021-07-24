@@ -6,8 +6,7 @@ import AboutImg from "../../public/assets/about-img.png";
 function About() {
   return (
     <>
-      <div className={styles.scroll} id="about"></div>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} id="about">
         <div className={styles.boxOne}>
           <div className={styles.textWrapper}>
             <h2 className={styles.title}>CONOCENOS!</h2>

@@ -10,7 +10,7 @@
   top: 0;
   width: 100%;
   z-index: 9999;
-  height: 15vh;
+  height: 110px;
 
   .logoWrapper {
     margin-left: 10%;
@@ -57,12 +57,20 @@
 
   .hamList {
     position: absolute;
-    top: 15vh;
+    top: 100px;
     right: 0;
     background-color: white;
 
     .hamItem {
       padding: 1em;
+
+      &:hover {
+        background-color: var(--light-grey);
+      }
+
+      &:focus {
+        background-color: var(--light-grey);
+      }
     }
   }
 }

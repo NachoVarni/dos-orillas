@@ -29,7 +29,6 @@ function SamplePrevArrow(props) {
 function Work() {
   return (
     <>
-      <div className={styles.scroll} id="work"></div>
       <div className={styles.wrapper} id="work">
         <h3 className={styles.title}>NUESTRO TRABAJO</h3>
         <div className={styles.carousel}>

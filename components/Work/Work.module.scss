@@ -1,21 +1,17 @@
-.scroll {
-  padding-top: 15vh;
-  background-color: var(--light-blue);
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 85vh;
+  margin-bottom: 20px;
   background-color: var(--light-grey);
 }
 
 .title {
   color: var(--violet);
   font-size: 3rem;
-  margin: 1em 0em 2.31em;
+  margin: 1em 0em 1.5em;
 
   @media (max-width: 768px) {
     font-size: 2.5rem;
@@ -40,8 +36,8 @@
 
   .card {
     position: relative;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
   }
 }
 

@@ -5,13 +5,38 @@ import Logo from "../../public/assets/logo-dos-orillas.png";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { clickOutside } from "../../hooks/clickOutside";
+
+let useClickOutside = (handler) => {
+  let domNode = useRef();
+
+  useEffect(() => {
+    let maybeHandler = (event) => {
+      if (!domNode.current || !domNode.current.contains(event.target)) {
+        handler();
+      }
+    };
+
+    document.addEventListener("mousedown", maybeHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", maybeHandler);
+    };
+  });
+
+  return domNode;
+};
 
 function Navbar() {
   const [hamMenu, setHamMenu] = useState(false);
 
+  let domNode = useClickOutside(() => {
+    setHamMenu(false);
+  });
+
   return (
-    <div className={styles.navbar}>
+    <div className={styles.navbar} ref={domNode}>
       <div className={styles.logoWrapper}>
         <Link to="home" spy={true} smooth={true}>
           <Image src={Logo} alt="logo" />
@@ -19,16 +44,40 @@ function Navbar() {
       </div>
 
       <ul className={styles.list}>
-        <Link to="about" spy={true} smooth={true} activeClass={styles.active}>
+        <Link
+          to="about"
+          offset={-110}
+          spy={true}
+          smooth={true}
+          activeClass={styles.active}
+        >
           <li className={styles.item}>CONOCENOS</li>
         </Link>
-        <Link to="explain" spy={true} smooth={true} activeClass={styles.active}>
+        <Link
+          to="explain"
+          offset={-110}
+          spy={true}
+          smooth={true}
+          activeClass={styles.active}
+        >
           <li className={styles.item}>QUE HACEMOS</li>
         </Link>
-        <Link to="work" spy={true} smooth={true} activeClass={styles.active}>
+        <Link
+          to="work"
+          offset={-110}
+          spy={true}
+          smooth={true}
+          activeClass={styles.active}
+        >
           <li className={styles.item}>NUESTRO TRABAJO</li>
         </Link>
-        <Link to="budget" spy={true} smooth={true} activeClass={styles.active}>
+        <Link
+          to="budget"
+          offset={-110}
+          spy={true}
+          smooth={true}
+          activeClass={styles.active}
+        >
           <li className={styles.item} to="budget">
             PRESUPUESTA
           </li>
@@ -42,16 +91,40 @@ function Navbar() {
       </div>
       {hamMenu && (
         <ul className={styles.hamList}>
-          <Link to="about" spy={true} smooth={true} activeClass={true}>
+          <Link
+            to="about"
+            offset={-110}
+            spy={true}
+            smooth={true}
+            activeClass={styles.active}
+          >
             <li className={styles.hamItem}>CONOCENOS</li>
           </Link>
-          <Link to="explain" spy={true} smooth={true} activeClass={true}>
+          <Link
+            to="explain"
+            offset={-110}
+            spy={true}
+            smooth={true}
+            activeClass={styles.active}
+          >
             <li className={styles.hamItem}>QUE HACEMOS</li>
           </Link>
-          <Link to="work" spy={true} smooth={true} activeClass={true}>
+          <Link
+            to="work"
+            offset={-110}
+            spy={true}
+            smooth={true}
+            activeClass={styles.active}
+          >
             <li className={styles.hamItem}>NUESTRO TRABAJO</li>
           </Link>
-          <Link to="budget" spy={true} smooth={true} activeClass={true}>
+          <Link
+            to="budget"
+            offset={-110}
+            spy={true}
+            smooth={true}
+            activeClass={styles.active}
+          >
             <li className={styles.hamItem} to="budget">
               PRESUPUESTA
             </li>

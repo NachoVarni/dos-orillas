@@ -7,8 +7,7 @@ import { Link } from "react-scroll";
 function Budget() {
   return (
     <>
-      <div className={styles.scroll} id="budget"></div>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} id="budget">
         <Image
           src={BudgetImg}
           layout="fill"

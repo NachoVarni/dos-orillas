@@ -9,8 +9,7 @@ import design from "../../public/assets/design.png";
 function Explain() {
   return (
     <>
-      <div className={styles.scroll} id="explain"></div>
-      <div className={styles.main}>
+      <div className={styles.main} id="explain">
         <h3 className={styles.title}>QUE HACEMOS?</h3>
         <div className={styles.wrapper}>
           <div className={styles.card}>
