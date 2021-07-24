@@ -1,41 +1,18 @@
-.contactButton {
+.whatsappFloat {
   position: fixed;
   bottom: 5%;
   right: 5%;
   float: right;
   cursor: pointer;
   font-size: 1.1rem;
-  background-color: white;
-  color: var(--blue);
-  padding: 1em 4.27em;
+  color: rgb(4, 243, 4);
+  background: var(--violet);
+  font-size: 3rem;
+  padding: 0.2em;
   border-radius: 15px;
   border: 1px solid var(--violet);
 
-  @media (max-width: 1536px) {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 1280px) {
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 940px) {
-    font-size: 0.9rem;
-  }
-
   @media (max-width: 812px) {
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 0.8rem;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 0.6rem;
+    font-size: 2.5rem;
   }
 }
