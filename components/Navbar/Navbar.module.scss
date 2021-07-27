@@ -50,7 +50,11 @@
     margin-right: 10%;
 
     @media (max-width: 812px) {
-      display: block;
+      display: flex;
+      height: 100px;
+      width: 10%;
+      align-items: center;
+      justify-content: center;
 
       .hamburguer {
         font-size: 2rem;
@@ -69,10 +73,14 @@
 
       &:hover {
         background-color: var(--light-grey);
+        color: var(--violet);
+        font-weight: 900;
       }
 
       &:focus {
         background-color: var(--light-grey);
+        color: var(--violet);
+        font-weight: 900;
       }
     }
   }
