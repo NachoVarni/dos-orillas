@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import BudgetImg from "../../public/assets/budget-image.png";
+import BudgetImg from "../../public/assets/fotoAgua-min.png";
 import styles from "./Budget.module.scss";
 import { Link } from "react-scroll";
 

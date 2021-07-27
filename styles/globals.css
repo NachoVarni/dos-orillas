@@ -38,7 +38,3 @@ p {
   padding: 0;
   display: block;
 }
-
-body {
-  background-color: var(--light-grey);
-}

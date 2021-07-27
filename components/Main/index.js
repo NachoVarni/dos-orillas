@@ -17,11 +17,10 @@ function Main() {
       <About />
       <div className={styles.break}></div>
       <Explain />
-      <div className={`${styles.break} ${styles.lightBlue}`}></div>
+      {/* <div className={`${styles.break} ${styles.lightBlue}`}></div> */}
       <Work />
       <div className={styles.break}></div>
       <Budget />
-      <div className={styles.budget}></div>
       <Contact />
       <ContactButton />
     </div>

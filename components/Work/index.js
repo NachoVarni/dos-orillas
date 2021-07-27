@@ -3,7 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./Work.module.scss";
 import Image from "next/image";
-import poolExample from "../../public/assets/pool-example.png";
+import poolOne from "../../public/assets/pool-1.png";
+import poolTwo from "../../public/assets/pool-2.jpg";
+import poolThree from "../../public/assets/pool-3.jpg";
+import poolFour from "../../public/assets/pool-4.jpg";
 import { Link } from "react-scroll";
 
 function SampleNextArrow(props) {
@@ -53,7 +56,7 @@ function Work() {
           >
             <div className={styles.card}>
               <Image
-                src={poolExample}
+                src={poolOne}
                 className={styles.image}
                 alt="pool example"
                 layout="fill"
@@ -62,7 +65,7 @@ function Work() {
             </div>
             <div className={styles.card}>
               <Image
-                src={poolExample}
+                src={poolTwo}
                 className={styles.image}
                 alt="pool example"
                 layout="fill"
@@ -71,7 +74,7 @@ function Work() {
             </div>
             <div className={styles.card}>
               <Image
-                src={poolExample}
+                src={poolThree}
                 className={styles.image}
                 alt="pool example"
                 layout="fill"
@@ -80,7 +83,7 @@ function Work() {
             </div>
             <div className={styles.card}>
               <Image
-                src={poolExample}
+                src={poolFour}
                 className={styles.image}
                 alt="pool example"
                 layout="fill"
